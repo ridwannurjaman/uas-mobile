@@ -1,0 +1,145 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/txt_nama_masjid"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="32dp"
+            android:background="@drawable/bg_input"
+            android:hint="Nama Masjid"
+            android:inputType="text"
+
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/txt_alamat"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="32dp"
+            android:layout_marginTop="32dp"
+            android:hint="Alamat"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:padding="20dp"
+            android:inputType="text"
+            android:background="@drawable/bg_input"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_nama_masjid" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/txt_donasi"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="32dp"
+            android:layout_marginTop="32dp"
+            android:padding="20dp"
+            android:inputType="number"
+            android:hint="Donasi"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:background="@drawable/bg_input"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_alamat" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/txt_nohp"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="32dp"
+            android:layout_marginTop="32dp"
+            android:padding="20dp"
+            android:inputType="number"
+            android:hint="No HP"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:background="@drawable/bg_input"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_donasi" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/txt_lat"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="32dp"
+            android:layout_marginTop="32dp"
+            android:padding="20dp"
+            android:inputType="number"
+            android:hint="Latitude"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:background="@drawable/bg_input"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_nohp" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/txt_long"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="32dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/bg_input"
+            android:hint="Longitude"
+            android:inputType="number"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.531"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_lat" />
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_picker"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_margin="32dp"
+            android:background="@drawable/button_rounded"
+            android:fontFamily="@font/noto"
+            android:text="GET LOCATION"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_long" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_margin="32dp"
+            android:background="@drawable/button_rounded"
+            android:fontFamily="@font/noto"
+            android:text="Simpan"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_picker" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
